@@ -10,6 +10,25 @@ public class CustomerCustomer {
     @Column(name = "id", nullable = false)
     private Integer id;
 
+    public CustomerCustomer() {
+    }
+
+    public CustomerCustomer(String customerName, String phoneNumber, String email, String password) {
+        this.customerName = customerName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.password = password;
+    }
+
+    public CustomerCustomer(Integer id, String customerName, String phoneNumber, String email, String password) {
+        this.id = id;
+        this.customerName = customerName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.password = password;
+    }
+
+
     @Column(name = "Customer_name", nullable = false, length = 50)
     private String customerName;
 

@@ -1,2 +1,14 @@
-package com.SvTech.SpringApi.models;public class LoginCredentials {
+package com.SvTech.SpringApi.models;
+
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class LoginCredentials {
+
+    private String email;
+    private String password;
 }

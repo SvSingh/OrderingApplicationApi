@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Welcome {
 
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String getPage(){
 
         return "Welcome To Restaurant Api";
